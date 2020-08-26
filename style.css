@@ -1,0 +1,75 @@
+.navbar-nav > .nav-item {
+  margin-left: 15px;
+}
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+section {
+  display: flex;
+  padding-top: 15%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+:root {
+  --red: #cd4541;
+}
+
+.red {
+  color: var(--red);
+}
+.btn-primary {
+  border: 0px;
+  color: white;
+  background-color: var(--red);
+}
+.btn-primary:hover {
+  background-image: var(--red);
+}
+
+.card {
+  margin-bottom: 25px;
+  box-shadow: 0 10px 40px rgba(59, 43, 91, 0.3);
+}
+section:nth-child(odd) {
+  background-color: #e9ebee;
+}
+.container {
+  padding-top: 5%;
+}
+#fourth > .container > p:nth-last-of-type(1) {
+  font-size: 25px;
+  margin-bottom: 100px;
+}
+.typerwriter {
+  color: red;
+  font: arial;
+  font-weight: 850;
+  overflow: hidden;
+  position: relative;
+  width: 14em;
+  border-right: 2px solid #e9ebee;
+  font-size: 30px;
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 14em;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+form {
+  padding: 15%;
+}
